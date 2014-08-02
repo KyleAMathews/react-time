@@ -3,9 +3,38 @@
 var moment = require('moment');
 var React = require('react');
 
+function isNumber(value) {
+  return toString.call(value) === '[object Number]';
+}
+
 var Time = React.createClass({
 
   displayName: 'Time',
+  ticker: null,
+
+  getDefaultProps: function() {
+    return {
+      autoUpdate: false
+    };
+  },
+
+  componentDidMount: function() {
+    if (this.props.autoUpdate) {
+      var delay = isNumber(this.props.autoUpdate) ? this.props.autoUpdate * 1000 : 2600;
+
+      this.ticker = setInterval(this.invalidate, delay);
+    }
+  },
+
+  componentWillUnmount: function() {
+    if (this.ticker) {
+      clearInterval(this.ticker);
+    }
+  },
+
+  invalidate: function() {
+    this.forceUpdate()
+  },
 
   render: function() {
     var value = this.props.value;

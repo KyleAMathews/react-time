@@ -19,7 +19,7 @@ attribute.
         return (
           <div>
             <p>Today is <Timestamp value={now} format="YYYY/mm/dd" /></p>
-            <p>This was <Timestamp value={wasDate} relative /></p>
+            <p>This was <Timestamp value={wasDate} relative autoUpdate /></p>
           </div>
         );
       }

@@ -12,13 +12,13 @@ ci:
 lint:
 	@$(BIN)/jsxhint --force-transform index.js
 
-release-patch: lint test
+release-patch:
 	@$(call release,patch)
 
-release-minor: lint test
+release-minor:
 	@$(call release,minor)
 
-release-major: lint test
+release-major:
 	@$(call release,major)
 
 publish:

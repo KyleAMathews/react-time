@@ -1,7 +1,7 @@
 {
   "name": "react-time-temp-fork",
   "description": "react component for rendering formatted timestamps",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "author": {
     "name": "Andrey Popp",
     "email": "8mayday@gmail.com",

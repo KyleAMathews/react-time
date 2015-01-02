@@ -1,25 +1,19 @@
 {
   "name": "react-time",
-  "version": "2.1.1",
   "description": "react component for rendering formatted timestamps",
-  "main": "dist/index.js",
-  "dependencies": {
-    "moment": "^2.8.3",
-    "reactify": "^0.15.2"
-  },
-  "peerDependencies": {
-    "react": "~0.12.0"
+  "version": "2.1.1",
+  "author": {
+    "name": "Andrey Popp",
+    "email": "8mayday@gmail.com",
+    "url": "http://andreypopp.com"
   },
   "devDependencies": {
     "jsxhint": "^0.5.0",
     "mocha": "~1.17.1",
     "mochify": "^1.6.0",
     "react": "~0.12.0",
-    "react-tools": "^0.12.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/andreypopp/react-time.git"
+    "react-tools": "^0.12.2",
+    "reactify": "^0.15.2"
   },
   "homepage": "https://github.com/andreypopp/react-time",
   "keywords": [
@@ -28,13 +22,17 @@
     "time",
     "component"
   ],
-  "author": {
-    "name": "Andrey Popp",
-    "email": "8mayday@gmail.com",
-    "url": "http://andreypopp.com"
+  "license": "MIT",
+  "main": "dist/index.js",
+  "peerDependencies": {
+    "moment": "^2.8.3",
+    "react": "~0.12.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/andreypopp/react-time.git"
   },
   "scripts": {
     "test": "make test"
-  },
-  "license": "MIT"
+  }
 }
